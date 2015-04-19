@@ -1,0 +1,66 @@
+# =============================================
+# ASSEMBLE CONFIG
+# =============================================
+
+# Dest config
+root:             _devwayne.github.io
+dest:             <%= site.root %>
+
+# =============================================
+# SOURCE CONFIG
+# =============================================
+# Metadata
+data:             data
+utils:            <%= site.data %>/_utils
+mixins:           <%= site.data %>/_utils
+date:             <%= new Date() %>
+        
+# Assets > fonts, icons, images etc.
+assets:           assets
+images:           <%= site.assets %>/images
+fonts:            <%= site.assets %>/fonts
+
+# Styles
+styles:           styles
+
+# Scripts
+scripts:          scripts
+
+# Content
+content:          content
+
+
+# =============================================
+# TEMPLATES
+# =============================================
+
+# Base directory for templates
+templates:        templates
+
+# Pages
+pages:            <%= site.templates %>
+
+# Partials
+includes:         <%= site.templates %>/includes
+snippets:         <%= site.templates %>/snippets
+
+# Layouts
+layouts:          <%= site.templates %>/layouts
+layoutext:        .hbs
+layout:           content
+
+
+# =============================================
+# EXTENSIONS
+# =============================================
+
+helpers:          <%= site.templates %>/_helpers
+plugins:
+  # npm
+  # - assemble-contrib-drafts
+  # - assemble-contrib-navigation
+  - assemble-contrib-permalinks
+
+  # local
+  - <%= site.templates %>/_plugins/navigation.js
+  - <%= site.templates %>/_plugins/holder-404-avoid.js
