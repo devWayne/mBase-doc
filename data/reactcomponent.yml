@@ -1,0 +1,13 @@
+# =============================================
+# PUBLISHED
+# =============================================
+base: content/reactcomponent
+
+# Published documenation
+published:
+  overview:
+    title: Overview
+    lead:  Simple overview
+    files: <%= reactcomponent.base %>/overview.md
+
+

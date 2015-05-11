@@ -92,10 +92,6 @@ module.exports = function(grunt) {
       site: {
         src: ['styles/index.less'],
         dest: '<%= assemble.options.assets %>/css/index.css'
-      },
-      mb:{
-      	src: ['styles/mb.less'],
-	dest:'<%= assemble.options.assets %>/css/mb.css'
       }
     },
 
@@ -169,7 +165,6 @@ module.exports = function(grunt) {
     'clean',
     'copy',
     'less:site',
-    'less:mb',
     'assemble:site',
     'connect',
     'watch'
@@ -181,7 +176,6 @@ module.exports = function(grunt) {
     'clean',
     'copy',
     'less:site',
-    'less:mb',
     'assemble:site'
   ]);
 };

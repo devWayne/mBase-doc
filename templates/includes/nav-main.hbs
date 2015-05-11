@@ -13,13 +13,38 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
+	{{#is slug 'index'}}
         <li class="active">
-          <span>文档主页</span>
+          <span>主页</span>
         </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'index'}}/">主页</a>
+        </li>
+        {{/is}}  
+	{{#is slug 'stylesheet'}}
+        <li class="active">
+          <span>样式组件库</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'stylesheet'}}/">样式组件库</a>
+        </li>
+        {{/is}}
+	{{#is slug 'reactcomponent'}}
+        <li class="active">
+          <span>React Component</span>
+        </li>
+        {{else}}
+        <li>
+          <a href="{{rel 'reactcomponent'}}/">React Component</a>
+        </li>
+        {{/is}}
         <li>
           <a href="http://events.dianping.com/dpux/page-1.html">DPUX规范</a>
-        </li>    
+        </li>   
       </ul>
     </nav>
+    <a href="https://github.com/devWayne/mBase" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="{{assets}}/ico/github-icon.png" alt="Fork me on GitHub"></a>
   </div>
 </header>
