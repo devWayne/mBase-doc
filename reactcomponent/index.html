@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+	mBase Doc
+</title>
+
+<!-- Main styles -->
+<link href="../public/css/index.css" rel="stylesheet">
+
+<!-- Webfonts -->
+<script type="text/javascript">
+  WebFontConfig = {google: {families: ['PT+Sans:400,700,400italic,700italic', 'PT+Mono&subset=latin,cyrillic'] }};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="../public/ico/favicon.ico">
+
+  </head>
+  <body class="reactcomponent">
+    
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../#" class="navbar-brand" alt="Less">
+        <img src="../public/img/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+        <li>
+          <a href="../index/">&#x4E3B;&#x9875;</a>
+        </li>
+          
+	
+        <li>
+          <a href="../stylesheet/">&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x5E93;</a>
+        </li>
+        
+	
+        <li class="active">
+          <span>React Component</span>
+        </li>
+        
+        <li>
+          <a href="http://events.dianping.com/dpux/page-1.html">DPUX&#x89C4;&#x8303;</a>
+        </li>   
+      </ul>
+    </nav>
+    <a href="https://github.com/devWayne/mBase" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
+  </div>
+</header>
+
+
+    
+<div class="docs-header" id="content">
+  <div class="container">
+    <h1>React Component</h1>
+    <p>Dp&#x5782;&#x76F4;&#x9891;&#x9053;UI&#x5C42;&#x7EC4;&#x4EF6;</p>
+  </div>
+</div>
+
+
+
+
+    
+    <div class="container docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar hidden-print" role="complementary">
+            <div id="navigation">
+  
+<ul class="nav sidenav"><li><a href="#overview">Overview</a><ul class="nav"><li><a href="#overview--introduce">&#x4ECB;&#x7ECD;-Introduce</a></li>
+<li><a href="#overview--usage">&#x4F7F;&#x7528;&#x65B9;&#x5F0F;-Usage</a></li></ul></li></ul></div>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          
+<div class="panel docs-content">
+  
+
+
+  <!-- Overview -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">Overview<span class="anchor-target" id="overview"></span>
+<a href="#overview" name="overview" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
+
+    
+    <div class="section-content">
+
+      <!-- overview -->
+       
+
+
+<blockquote>
+<p>mBase.react&#x662F;&#x4E00;&#x5957;&#x57FA;&#x4E8E;React.js&#x5F00;&#x53D1;&#x7684;UI&#x5C42;&#x7EC4;&#x4EF6;&#x5E93;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;React Component&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;mapi&#x63A5;&#x53E3;&#xFF0C;&#x5229;&#x7528;React.js Virtual DOM&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5B9E;&#x73B0;&#x6700;&#x5FEB;&#x7684;DOM&#x6E32;&#x67D3;&#xFF08;render),&#x63D0;&#x5347;&#x9875;&#x9762;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
+</blockquote>
+<h3 class="docs-heading">&#x4ECB;&#x7ECD;-Introduce<span class="anchor-target" id="overview--introduce"></span>
+<a href="#overview--introduce" name="overview--introduce" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>  &#x76EE;&#x524D;&#x79FB;&#x52A8;&#x7AEF;Web&#x7684;&#x4F53;&#x9A8C;&#x4E0D;&#x5982;&#x539F;&#x751F;&#x7684;&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;DOM&#x7684;&#x6E32;&#x67D3;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#xFF0C;&#x5BB9;&#x6613;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x5361;&#x987F;&#xFF0C;&#x800C;React&#x662F;&#x4E00;&#x4E2A;&#x6E32;&#x67D3;&#x6027;&#x80FD;&#x6781;&#x4F73;&#x7684;UI&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x91CD;&#x7ED8;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x5DEE;&#x5F02;&#x6700;&#x5C0F;&#x7684;DOM&#x6539;&#x52A8;&#x65B9;&#x5F0F;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x63D0;&#x9AD8;&#x4E86;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;<br><code>React Component</code>&#x57FA;&#x4E8E;ES6 Class&#x7279;&#x6027;&#x5F00;&#x53D1;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;<code>React Component</code>&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;mapi&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;UI&#x5C42;&#x548C;&#x6570;&#x636E;&#x5C42;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x5E76;&#x4E3A;&#x5C06;&#x6765;&#x5F15;&#x5165;<code>React Native</code>&#x6216;&#x8005;&#x662F;&#x540C;&#x6784;&#x5E94;&#x7528;<code>Isomorphic JavaScript</code>&#x57CB;&#x4E0B;&#x94FA;&#x57AB;&#x3002;<br><em>&#x6CE8;1&#xFF1A;&#x5E76;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;ES6,&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x7684;Cortex&#x6CA1;&#x6709;&#x4E13;&#x95E8;&#x7684;<code>ES6 loader</code>,&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;(React tools&#x6216;&#x8005;babel),&#x4F1A;&#x4F7F;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5F15;&#x5165;&#x5927;&#x91CF;&#x7684;ES6&#x57AB;&#x7247;(shim),&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x7684;ES6&#x7279;&#x6027;</em><br><em>&#x6CE8;2&#xFF1A;&#x76EE;&#x524D;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x7535;&#x5F71;&#x9891;&#x9053;</em></p>
+<h3 class="docs-heading">&#x4F7F;&#x7528;&#x65B9;&#x5F0F;-Usage<span class="anchor-target" id="overview--usage"></span>
+<a href="#overview--usage" name="overview--usage" class="anchor glyphicon glyphicon-link"></a></h3>
+<h4 class="docs-heading">&#x4F7F;&#x7528;Cortex:<span class="anchor-target" id="overview--cortex-"></span>
+<a href="#overview--cortex-" name="overview--cortex-" class="anchor glyphicon glyphicon-link"></a></h4>
+<pre><code class="lang-shell">cortex install --save rc-hot-movie
+cortex install --save rc-hot-cinema
+</code></pre>
+<h4 class="docs-heading">&#x4F7F;&#x7528;mBase-Cli:<span class="anchor-target" id="overview--mbase-cli-"></span>
+<a href="#overview--mbase-cli-" name="overview--mbase-cli-" class="anchor glyphicon glyphicon-link"></a></h4>
+<p>1.&#x5168;&#x5C40;&#x5B89;&#x88C5;<code>mBase-Cli</code></p>
+<pre><code class="lang-shell">npm i -g mb-cli
+</code></pre>
+<p>2.&#x5728;<code>package.json</code>&#x6216;<code>cortex.json</code>&#x4E2D;&#x914D;&#x7F6E;&#x8981;&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;</p>
+<pre><code class="lang-javascript">  <span class="hljs-comment">//example</span>
+  <span class="hljs-string">&quot;mBase.react&quot;</span>: [
+    <span class="hljs-string">&quot;hot-movie&quot;</span>,
+    <span class="hljs-string">&quot;hot-cinema&quot;</span>
+  ]
+</code></pre>
+<p>3.&#x8FD0;&#x884C;<code>mBase-Cli</code>,&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;&#x5C06;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x4E0A;&#x751F;&#x6210;<code>src/react-component</code>&#x6587;&#x4EF6;&#x5939;.</p>
+
+
+      <br>
+    </div>
+    
+
+  </div>
+
+
+
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>mBase docs are maintained by <a href="https://github.com/devWayne">devWayne</a>.</p>
+    <p>Documentation source code released under the MIT License.</p>
+  </div>
+</footer>
+
+
+    
+    <!-- Core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.min.js"></script>
+<script src="../public/js/application.js"></script>
+
+
+
+
+  </body>
+</html>
