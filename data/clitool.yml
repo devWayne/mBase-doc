@@ -1,0 +1,14 @@
+# =============================================
+# PUBLISHED
+# =============================================
+base: content/clitool
+
+# Published documenation
+published:
+  overview:
+    title: Overview
+    lead:  overview
+    files: <%= clitool.base %>/overview.md
+
+
+

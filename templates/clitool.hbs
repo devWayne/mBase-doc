@@ -1,0 +1,31 @@
+---
+title: mBase Cli
+lead: 依赖加载工具
+slug: clitool
+---
+
+{{#each clitool.published}}
+  <!-- {{title}} -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 id="{{@key}}">{{title}}</h1>
+    </div>
+
+    {{#each (expand files)}}
+    <div class="section-content">
+
+      <!-- {{basename .}} -->
+      {{success '>> Inlining:' (basename .)}} {{! log a success message! }}
+
+
+{{#markdown}}
+{{inline .}}
+{{/markdown}}
+
+      <br>
+    </div>
+    {{/each}}
+
+  </div>
+{{/each}}
+
