@@ -9,5 +9,8 @@ published:
     title: Overview
     lead:  Simple overview
     files: <%= reactcomponent.base %>/overview.md
+  usage:
+    title: Usage
+    files: <%= reactcomponent.base %>/usage.md
 
 

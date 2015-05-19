@@ -35,12 +35,16 @@ mBase-Cli 最初是为了解决样式文件引入的问题，将原先的完整�
 
 ### 快速使用-Usage
 
+<br />
+
 #### Step1:全局安装mBase-cli工具
 
 ```shell
 $ npm i -g mb-cli
 
 ```
+
+<br />
 
 #### Step2:配置模块
 
@@ -49,12 +53,15 @@ $ npm i -g mb-cli
 ```javascript
   //example
   "mBase": [
-    "components/banner.less",
-    "elements/arrow.less",
-    "elements/button.less"
+    "react-compoent/menu",
+    "react-compoent/hot-cinema",
+    "react-compoent/hot-movie"
   ]
 
 ```
+
+<br />
+
 #### Step3:执行指令
 
 ```
@@ -62,3 +69,18 @@ $ mBase-Cli
 
 ```
 
+在当前项目目录下生成目录树结构：   
+
+```
+├── src
+│   ├── components
+│   │   ├── hot-cinema-list.js
+│   │   ├── hot-cinema-wrapper.js
+│   │   ├── hot-cinema.js
+│   │   ├── hot-movie-list.js
+│   │   ├── hot-movie-main.js
+│   │   ├── hot-movie-sub.js
+│   │   ├── hot-movie-wrapper.js
+│   │   └── menu.js
+
+```
