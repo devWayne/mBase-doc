@@ -5409,6 +5409,9 @@ button.close {
  * Scaffolding
  * Update the basics of our documents to prep for docs content.
  */
+* {
+  font-family: "Microsoft YaHei" ! important;
+}
 body {
   position: relative;
   /* For scrollyspy */

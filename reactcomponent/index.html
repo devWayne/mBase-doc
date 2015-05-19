@@ -49,7 +49,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="../#" class="navbar-brand" alt="Less">
-        <img src="../public/img/logo.png">
+        <!--<img src="../public/img/logo.png"> -->
       </a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
@@ -103,8 +103,9 @@
             <div id="navigation">
   
 <ul class="nav sidenav"><li><a href="#overview">Overview</a><ul class="nav"><li><a href="#overview--introduce">&#x4ECB;&#x7ECD;-Introduce</a></li>
-<li><a href="#overview--reactcomponent-import">&#x5F15;&#x5165;ReactComponent-Import</a></li>
-<li><a href="#overview--usage">&#x4F7F;&#x7528;-Usage</a></li></ul></li></ul></div>
+<li><a href="#overview-react-component-">React Component&#x5B9E;&#x4F8B;</a></li></ul></li>
+<li><a href="#usage">Usage</a><ul class="nav"><li><a href="#usage--reactcomponent-">&#x5F15;&#x5165;ReactComponent&#x6A21;&#x5757;</a></li>
+<li><a href="#usage--render">&#x8C03;&#x7528;&#x65B9;&#x5F0F;-render</a></li></ul></li></ul></div>
           </div>
         </div>
         <div class="col-md-9" role="main">
@@ -132,20 +133,94 @@
 </blockquote>
 <h3 class="docs-heading">&#x4ECB;&#x7ECD;-Introduce<span class="anchor-target" id="overview--introduce"></span>
 <a href="#overview--introduce" name="overview--introduce" class="anchor glyphicon glyphicon-link"></a></h3>
-<p>  &#x76EE;&#x524D;&#x79FB;&#x52A8;&#x7AEF;Web&#x7684;&#x4F53;&#x9A8C;&#x4E0D;&#x5982;&#x539F;&#x751F;&#x7684;&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;DOM&#x7684;&#x6E32;&#x67D3;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#xFF0C;&#x5BB9;&#x6613;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x5361;&#x987F;&#xFF0C;&#x800C;React&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x80FD;&#x6781;&#x4F73;&#x7684;UI&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5C06;&#x771F;&#x5B9E;&#x7684;DOM&#x7ED3;&#x6784;&#x62BD;&#x8C61;&#x6210;<code>Virtual DOM</code>,&#x5E76;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x8FDB;&#x884C;&#x7EF4;&#x62A4;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x66F4;&#x65B0;&#xFF0C;&#x9875;&#x9762;&#x91CD;&#x7ED8;&#x8FDB;&#x884C;&#x91CD;&#x7ED8;&#x65F6;&#xFF0C;VD&#x7684;diff&#x7B97;&#x6CD5;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x5DEE;&#x5F02;&#x6700;&#x5C0F;&#x7684;DOM&#x6539;&#x52A8;&#x65B9;&#x5F0F;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x63D0;&#x9AD8;&#x4E86;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;   </p>
-<p>  React&#x672C;&#x8EAB;&#x53EA;&#x662F; View&#xFF0C;&#x53EF;&#x914D;&#x5408;&#x5176;&#x4ED6;&#x7C7B;&#x5E93;&#x4F7F;&#x7528;&#x3002;&#x5BF9;&#x4E8E;&#x73B0;&#x6709;&#x7684;&#x67B6;&#x6784;&#x4FB5;&#x5165;&#x6027;&#x6781;&#x5C0F;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x4F7F;&#x7528;&#x4F20;&#x7EDF;&#x7684;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x6216;&#x8005;&#x662F;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;&#x4F7F;&#x7528; <code>MVC</code>&#x3001;<code>MVVM</code>&#x6846;&#x67B6;&#x7684;&#x524D;&#x7AEF;&#x67B6;&#x6784;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x628A; React &#x5F53;&#x505A;&#x5176;&#x4E2D;&#x7684; V,&#x5373; View, &#x914D;&#x5408;&#x5176;&#x4ED6;&#x7C7B;&#x5E93;&#x4F7F;&#x7528;&#x3002;</p>
-<p><code>React Component</code>&#x57FA;&#x4E8E;ES6 Class&#x7279;&#x6027;&#x5F00;&#x53D1;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;<code>React Component</code>&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;mapi&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;UI&#x5C42;&#x548C;&#x6570;&#x636E;&#x5C42;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x5E76;&#x4E3A;&#x5C06;&#x6765;&#x5F15;&#x5165;<code>React Native</code>&#x6216;&#x8005;&#x662F;&#x540C;&#x6784;&#x5E94;&#x7528;<code>Isomorphic JavaScript</code>&#x57CB;&#x4E0B;&#x94FA;&#x57AB;&#x3002;   </p>
-<p><em>&#x6CE8;1&#xFF1A;&#x5E76;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;ES6,&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x7684;Cortex&#x6CA1;&#x6709;&#x4E13;&#x95E8;&#x7684;<code>ES6 loader</code>,&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;(React tools&#x6216;&#x8005;babel),&#x4F1A;&#x4F7F;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5F15;&#x5165;&#x5927;&#x91CF;&#x7684;ES6&#x57AB;&#x7247;(shim),&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x7684;ES6&#x7279;&#x6027;</em>   </p>
-<p><em>&#x6CE8;2&#xFF1A;&#x76EE;&#x524D;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x7535;&#x5F71;&#x9891;&#x9053;</em></p>
-<h3 class="docs-heading">&#x5F15;&#x5165;ReactComponent-Import<span class="anchor-target" id="overview--reactcomponent-import"></span>
-<a href="#overview--reactcomponent-import" name="overview--reactcomponent-import" class="anchor glyphicon glyphicon-link"></a></h3>
-<h4 class="docs-heading">&#x4F7F;&#x7528;Cortex&#x5F15;&#x5165;:<span class="anchor-target" id="overview--cortex-"></span>
-<a href="#overview--cortex-" name="overview--cortex-" class="anchor glyphicon glyphicon-link"></a></h4>
+<p>  &#x76EE;&#x524D;&#x79FB;&#x52A8;&#x7AEF;Web&#x7684;&#x4F53;&#x9A8C;&#x4E0D;&#x5982;&#x539F;&#x751F;&#x7684;&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;DOM&#x7684;&#x6E32;&#x67D3;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#xFF0C;&#x5BB9;&#x6613;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x5361;&#x987F;&#xFF0C;&#x800C;React&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x80FD;&#x6781;&#x4F73;&#x7684;UI&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5C06;&#x771F;&#x5B9E;&#x7684;DOM&#x7ED3;&#x6784;&#x62BD;&#x8C61;&#x6210;<code>Virtual DOM</code>,&#x5E76;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x8FDB;&#x884C;&#x7EF4;&#x62A4;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x66F4;&#x65B0;&#xFF0C;&#x9875;&#x9762;&#x91CD;&#x7ED8;&#x8FDB;&#x884C;&#x91CD;&#x7ED8;&#x65F6;&#xFF0C;VD&#x7684;diff&#x7B97;&#x6CD5;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x5DEE;&#x5F02;&#x6700;&#x5C0F;&#x7684;DOM&#x6539;&#x52A8;&#x65B9;&#x5F0F;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x63D0;&#x9AD8;&#x4E86;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;<br><br> 
+  React&#x672C;&#x8EAB;&#x53EA;&#x662F; View&#xFF0C;&#x53EF;&#x914D;&#x5408;&#x5176;&#x4ED6;&#x7C7B;&#x5E93;&#x4F7F;&#x7528;&#x3002;&#x5BF9;&#x4E8E;&#x73B0;&#x6709;&#x7684;&#x67B6;&#x6784;&#x4FB5;&#x5165;&#x6027;&#x6781;&#x5C0F;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x4F7F;&#x7528;&#x4F20;&#x7EDF;&#x7684;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x6216;&#x8005;&#x662F;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;&#x4F7F;&#x7528; <code>MVC</code>&#x3001;<code>MVVM</code>&#x6846;&#x67B6;&#x7684;&#x524D;&#x7AEF;&#x67B6;&#x6784;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x628A; React &#x5F53;&#x505A;&#x5176;&#x4E2D;&#x7684; V,&#x5373; View, &#x914D;&#x5408;&#x5176;&#x4ED6;&#x7C7B;&#x5E93;&#x4F7F;&#x7528;&#x3002;<br><br>
+<code>React Component</code>&#x57FA;&#x4E8E;ES6 Class&#x7279;&#x6027;&#x5F00;&#x53D1;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;<code>React Component</code>&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;mapi&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;UI&#x5C42;&#x548C;&#x6570;&#x636E;&#x5C42;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x5E76;&#x4E3A;&#x5C06;&#x6765;&#x5F15;&#x5165;<code>React Native</code>&#x6216;&#x8005;&#x662F;&#x540C;&#x6784;&#x5E94;&#x7528;<code>Isomorphic JavaScript</code>&#x57CB;&#x4E0B;&#x94FA;&#x57AB;&#x3002;<br><br>
+<em>&#x6CE8;1&#xFF1A;&#x5E76;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;ES6,&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x7684;Cortex&#x6CA1;&#x6709;&#x4E13;&#x95E8;&#x7684;<code>ES6 loader</code>,&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;(React tools&#x6216;&#x8005;babel),&#x4F1A;&#x4F7F;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5F15;&#x5165;&#x5927;&#x91CF;&#x7684;ES6&#x57AB;&#x7247;(shim),&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x7684;ES6&#x7279;&#x6027;</em>      </p>
+<p><em>&#x6CE8;2&#xFF1A;&#x76EE;&#x524D;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x7535;&#x5F71;&#x9891;&#x9053;</em>   </p>
+<h3 class="docs-heading">React Component&#x5B9E;&#x4F8B;<span class="anchor-target" id="overview-react-component-"></span>
+<a href="#overview-react-component-" name="overview-react-component-" class="anchor glyphicon glyphicon-link"></a></h3>
+<p><br></p>
+<h5 class="docs-heading">&#x5355;&#x4E00;&#x6A21;&#x5757;-Single<span class="anchor-target" id="overview--single"></span>
+<a href="#overview--single" name="overview--single" class="anchor glyphicon glyphicon-link"></a></h5>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x5BFC;&#x822A;&#x6A21;&#x5757;</span>
+
+<span class="hljs-keyword">var</span> urlList=[<span class="hljs-string">&quot;dianping://url1&quot;</span>,<span class="hljs-string">&quot;dianping://url2&quot;</span>,<span class="hljs-string">&quot;dianping://url3&quot;</span>,<span class="hljs-string">&quot;dianping://url4&quot;</span>];
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Menu</span> <span class="hljs-attribute">data</span>=<span class="hljs-value">{urlList}</span>/&gt;</span></span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;<br><img src="../public/img/reactcomponent/menu.jpg" alt="menu"></p>
+<p><br></p>
+<h5 class="docs-heading">&#x5D4C;&#x5957;&#x6A21;&#x5757;-Nesting<span class="anchor-target" id="overview--nesting"></span>
+<a href="#overview--nesting" name="overview--nesting" class="anchor glyphicon glyphicon-link"></a></h5>
+<h6 id="-">&#x5916;&#x5C42;&#x6A21;&#x5757;</h6>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x5F71;&#x9662;&#x5217;&#x8868;</span>
+
+&lt;HotCinemaWrapper url=<span class="hljs-string">&quot;http://app.movie.dianping.com/xxx.bin&quot;</span>/&gt;
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;<br><img src="../public/img/reactcomponent/hot-cinema-list.jpg" alt="hot-cinema-list"></p>
+<p><br></p>
+<h6 id="-">&#x5185;&#x5C42;&#x6A21;&#x5757;</h6>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x5355;&#x4E00;&#x5F71;&#x9662;</span>
+
+ <span class="hljs-keyword">var</span> result ={};
+ <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">HotCinema</span> <span class="hljs-attribute">data</span> = {<span class="hljs-attribute">result</span>} /&gt;</span></span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;<br><img src="../public/img/reactcomponent/hot-cinema.jpg" alt="hot-cinema"></p>
+<p><br></p>
+<h6 id="-">&#x5916;&#x5C42;&#x6A21;&#x5757;</h6>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x5F71;&#x9662;&#x5217;&#x8868;</span>
+
+&lt;HotMovieWrapper url=<span class="hljs-string">&quot;http://app.movie.dianping.com/xxx.bin&quot;</span>/&gt;
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;<br><img src="../public/img/reactcomponent/hot-movie-list.jpg" alt="hot-cinema-list"></p>
+<p><br></p>
+<h6 id="-">&#x5185;&#x5C42;&#x6A21;&#x5757;</h6>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x63A8;&#x8350;&#x5F71;&#x7247;</span>
+
+ <span class="hljs-keyword">var</span> result ={};
+ <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">HotMovieMain</span> <span class="hljs-attribute">data</span> = {<span class="hljs-attribute">result</span>} /&gt;</span></span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;<br><img src="../public/img/reactcomponent/hot-movie-main.jpg" alt="hot-movie"></p>
+<p><br></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x666E;&#x901A;&#x5F71;&#x7247;</span>
+
+ <span class="hljs-keyword">var</span> result ={};
+ <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">HotMovieSub</span> <span class="hljs-attribute">data</span> = {<span class="hljs-attribute">result</span>} /&gt;</span></span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;<br><img src="../public/img/reactcomponent/hot-movie-sub.jpg" alt="hot-movie"></p>
+
+
+      <br>
+    </div>
+    
+
+  </div>
+
+  <!-- Usage -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">Usage<span class="anchor-target" id="usage"></span>
+<a href="#usage" name="usage" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
+
+    
+    <div class="section-content">
+
+      <!-- usage -->
+       
+
+
+<h3 class="docs-heading">&#x5F15;&#x5165;ReactComponent&#x6A21;&#x5757;<span class="anchor-target" id="usage--reactcomponent-"></span>
+<a href="#usage--reactcomponent-" name="usage--reactcomponent-" class="anchor glyphicon glyphicon-link"></a></h3>
+<p><br></p>
+<h4 class="docs-heading">&#x4F7F;&#x7528;Cortex&#x5F15;&#x5165;:<span class="anchor-target" id="usage--cortex-"></span>
+<a href="#usage--cortex-" name="usage--cortex-" class="anchor glyphicon glyphicon-link"></a></h4>
 <pre><code class="lang-shell">cortex install --save rc-hot-movie
 cortex install --save rc-hot-cinema
 </code></pre>
-<h4 class="docs-heading">&#x4F7F;&#x7528;mBase-Cli&#x5F15;&#x5165;:<span class="anchor-target" id="overview--mbase-cli-"></span>
-<a href="#overview--mbase-cli-" name="overview--mbase-cli-" class="anchor glyphicon glyphicon-link"></a></h4>
+<h4 class="docs-heading">&#x4F7F;&#x7528;mBase-Cli&#x5F15;&#x5165;:<span class="anchor-target" id="usage--mbase-cli-"></span>
+<a href="#usage--mbase-cli-" name="usage--mbase-cli-" class="anchor glyphicon glyphicon-link"></a></h4>
+<p><br></p>
 <p>1.&#x5168;&#x5C40;&#x5B89;&#x88C5;<code>mBase-Cli</code></p>
 <pre><code class="lang-shell">npm i -g mb-cli
 </code></pre>
@@ -157,8 +232,9 @@ cortex install --save rc-hot-cinema
   ]
 </code></pre>
 <p>3.&#x8FD0;&#x884C;<code>mBase-Cli</code>,&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;&#x5C06;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x4E0A;&#x751F;&#x6210;<code>src/react-component</code>&#x6587;&#x4EF6;&#x5939;.</p>
-<h3 class="docs-heading">&#x4F7F;&#x7528;-Usage<span class="anchor-target" id="overview--usage"></span>
-<a href="#overview--usage" name="overview--usage" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">&#x8C03;&#x7528;&#x65B9;&#x5F0F;-render<span class="anchor-target" id="usage--render"></span>
+<a href="#usage--render" name="usage--render" class="anchor glyphicon glyphicon-link"></a></h3>
+<p><br></p>
 <p>1.&#x5F15;&#x5165;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//using cortex</span>
 <span class="hljs-keyword">var</span> hot-movie = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;hot-movie&apos;</span>);
@@ -167,13 +243,19 @@ cortex install --save rc-hot-cinema
 <span class="hljs-keyword">var</span> hot-movie = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../src/react-component/hot-movie.js&apos;</span>);
 </code></pre>
 <p>2.&#x586B;&#x5165;mapi&#x53C2;&#x6570;:</p>
-<pre><code class="lang-javascipt">//HotMovie &#x662F;&#x4E00;&#x4E2A; React Component
-&lt;HotMovie url=&quot;http://app.movie.dianping.com/xxx.bin&quot;/&gt;
+<pre><code class="lang-javascript"><span class="hljs-comment">//HotMovie &#x662F;&#x4E00;&#x4E2A; React Component</span>
+
+<span class="hljs-comment">//&#x4E0D;&#x540C;&#x7684;react component&#x9700;&#x8981;&#x7684;&#x53C2;&#x6570;&#x7ED3;&#x6784;&#x4E0D;&#x540C;&#xFF0C;&#x9700;&#x8981;&#x67E5;&#x770B;&#x6BCF;&#x4E00;&#x4E2A;component&#x7684;&#x6587;&#x6863;</span>
+
+&lt;HotMovie url=<span class="hljs-string">&quot;http://app.movie.dianping.com/xxx.bin&quot;</span>/&gt;
 </code></pre>
 <p>3.Render:</p>
-<pre><code> //React render&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x8282;&#x70B9;
- React.render(&lt;HotMovie url=&quot;http://app.movie.dianping.com/xxx.bin&quot;/&gt;, document.getElementById(&apos;hot-movie&apos;));
+<pre><code class="lang-javascript"> <span class="hljs-comment">//React render&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x8282;&#x70B9;</span>
+
+ <span class="hljs-keyword">var</span> hotMovie = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;hot-movie&apos;</span>);
+ React.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">HotMovie</span> <span class="hljs-attribute">url</span>=<span class="hljs-value">&quot;http://app.movie.dianping.com/xxx.bin&quot;</span>/&gt;</span>, hotMovie);</span>
 </code></pre>
+
 
       <br>
     </div>
