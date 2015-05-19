@@ -13,18 +13,19 @@ title: Overview
 `React Component`基于ES6 Class特性开发。每一个`React Component`对应一个mapi接口，实现UI层和数据层的分离，并为将来引入`React Native`或者是同构应用`Isomorphic JavaScript`埋下铺垫。   
 
 *注1：并不是完整的ES6,由于目前的Cortex没有专门的`ES6 loader`,需要使用第三方编译工具(React tools或者babel),会使每一个模块引入大量的ES6垫片(shim),所以不建议使用完整的ES6特性*   
+  
 *注2：目前只适用于电影频道*
 
-### 使用方式-Usage
+### 引入ReactComponent-Import
 
-#### 使用Cortex:
+#### 使用Cortex引入:
 
 ```shell
 cortex install --save rc-hot-movie
 cortex install --save rc-hot-cinema
 ```
 
-#### 使用mBase-Cli:
+#### 使用mBase-Cli引入:
 
 1.全局安装`mBase-Cli`
 
@@ -46,5 +47,27 @@ npm i -g mb-cli
 3.运行```mBase-Cli```,引入的模块将在当前目录路径上生成`src/react-component`文件夹.
 
 
+### 使用-Usage
+
+1.引入模块文件：
+```javascript
+//using cortex
+var hot-movie = require('hot-movie');
+
+//using mbase-cli
+var hot-movie = require('../src/react-component/hot-movie.js');
+```
 
 
+2.填入mapi参数:
+```javascipt
+//HotMovie 是一个 React Component
+<HotMovie url="http://app.movie.dianping.com/xxx.bin"/>
+
+```
+
+3.Render:
+```
+ //React render，第二个参数为输出的节点
+ React.render(<HotMovie url="http://app.movie.dianping.com/xxx.bin"/>, document.getElementById('hot-movie')); 
+```

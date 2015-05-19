@@ -66,7 +66,7 @@ Awaiting:
 
 实例:
 
-[点击此处](elements.html#button)
+[点击此处](http://kylar.cn/mBase.css/test/elements.html#button)
 
 
 ### 星级-Stars
@@ -102,7 +102,7 @@ Awaiting:
 
 实例:
 
-[点击此处](elements.html#star)
+[点击此处](http://kylar.cn/mBase.css/test/elements.html#star)
 
 
 ### 选择-Selects
@@ -189,21 +189,7 @@ Awaiting:
 
 实例:
 
-[点击此处](elements.html#select)
-
-
-### 边框线-Outline
-
-使用方式:   
-
-
-输出:   
-
-![banner](../public/img/outline.jpg)
-
-实例:
-
-[点击此处](elements.html#outline)
+[点击此处](http://kylar.cn/mBase.css/test/elements.html#select)
 
 
 ### 箭头-Arrows
@@ -248,6 +234,6 @@ Awaiting:
 
 实例:
 
-[点击此处](elements.html#arrow)
+[点击此处](http://kylar.cn/mBase.css/test/elements.html#arrow)
 
 

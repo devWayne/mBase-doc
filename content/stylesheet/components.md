@@ -22,7 +22,7 @@ title: 组件-Components
 
 实例:
 
-[点击此处](components.html#banner)
+[点击此处](http://kylar.cn/mBase.css/test/components.html#banner)
 
 
 ### 提示条-Tips
@@ -75,7 +75,7 @@ disable
 
 实例:
 
-[点击此处](components.html#tip)
+[点击此处](http://kylar.cn/mBase.css/test/components.html#tip)
 
 ### 列表-List
 
@@ -104,7 +104,7 @@ disable
 
 实例:
 
-[点击此处](components.html#list)
+[点击此处](http://kylar.cn/mBase.css/test/components.html#list)
 
 ### 大提示-Caption
 
@@ -139,6 +139,6 @@ Type 2:
 
 实例:
 
-[点击此处](components.html#caption)
+[点击此处](http://kylar.cn/mBase.css/test/components.html#caption)
 
 

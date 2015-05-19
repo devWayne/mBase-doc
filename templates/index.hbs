@@ -1,17 +1,32 @@
 ---
 title: mBase
-lead: mBase
+lead: 移动前端UI视图层样式组件集合
 slug: index
 ---
 
 
-{{!-- Getting started
-================================================== --}}
-<div class="docs-section">
-  <div class="page-header">
-    <h1 id="getting-started">Getting Started</h1>
+{{#each index.published}}
+  <!-- {{title}} -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 id="{{@key}}">{{title}}</h1>
+    </div>
+
+    {{#each (expand files)}}
+    <div class="section-content">
+
+      <!-- {{basename .}} -->
+      {{success '>> Inlining:' (basename .)}} {{! log a success message! }}
+
+
+{{#markdown}}
+{{inline .}}
+{{/markdown}}
+
+      <br>
+    </div>
+    {{/each}}
+
   </div>
-</div>
-
-
+{{/each}}
 

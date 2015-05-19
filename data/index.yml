@@ -1,0 +1,14 @@
+# =============================================
+# PUBLISHED
+# =============================================
+base: content/index
+
+# Published documenation
+published:
+  overview:
+    title: Overview
+    lead:  overview
+    files: <%= index.base %>/overview.md
+
+
+

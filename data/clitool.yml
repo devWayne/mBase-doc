@@ -9,6 +9,11 @@ published:
     title: Overview
     lead:  overview
     files: <%= clitool.base %>/overview.md
-
+  api:
+    title: API接口
+    files: <%= clitool.base %>/api.md
+  qa:
+    title: 常见问题Q&A
+    files: <%= clitool.base %>/qa.md
 
 
