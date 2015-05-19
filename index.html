@@ -69,12 +69,17 @@
           <a href="reactcomponent/">React Component</a>
         </li>
         
+	
+        <li>
+          <a href="clitool/">CLI&#x5DE5;&#x5177;</a>
+        </li>
+        
         <li>
           <a href="http://events.dianping.com/dpux/page-1.html">DPUX&#x89C4;&#x8303;</a>
         </li>   
       </ul>
     </nav>
-    <a href="https://github.com/devWayne/mBase" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="public/ico/github-icon.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="public/ico/github-icon.png" alt="Fork me on GitHub"></a>
   </div>
 </header>
 
@@ -83,7 +88,7 @@
 <div class="docs-header" id="content">
   <div class="container">
     <h1>mBase</h1>
-    <p>mBase</p>
+    <p>&#x79FB;&#x52A8;&#x524D;&#x7AEF;UI&#x89C6;&#x56FE;&#x5C42;&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x96C6;&#x5408;</p>
   </div>
 </div>
 
@@ -97,7 +102,10 @@
           <div class="sidebar hidden-print" role="complementary">
             <div id="navigation">
   
-<ul class="nav sidenav"><li><a href="#getting-started">Getting Started</a></li></ul></div>
+<ul class="nav sidenav"><li><a href="#overview">Overview</a><ul class="nav"><li><a href="#overview--introduce">&#x4ECB;&#x7ECD;-Introduce</a></li>
+<li><a href="#overview--stylesheet">&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x5E93;-Stylesheet</a></li>
+<li><a href="#overview-react-component">React Component</a></li>
+<li><a href="#overview-cli-">CLI&#x5DE5;&#x5177;</a></li></ul></li></ul></div>
           </div>
         </div>
         <div class="col-md-9" role="main">
@@ -107,13 +115,65 @@
 
 
 
-<div class="docs-section">
-  <div class="page-header">
-    <h1 class="docs-heading">Getting Started<span class="anchor-target" id="getting-started"></span>
-<a href="#getting-started" name="getting-started" class="anchor glyphicon glyphicon-link"></a></h1>
-  </div>
-</div>
+  <!-- Overview -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">Overview<span class="anchor-target" id="overview"></span>
+<a href="#overview" name="overview" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
 
+    
+    <div class="section-content">
+
+      <!-- overview -->
+       
+
+
+<h3 class="docs-heading">&#x4ECB;&#x7ECD;-Introduce<span class="anchor-target" id="overview--introduce"></span>
+<a href="#overview--introduce" name="overview--introduce" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x5728;&#x4E1A;&#x52A1;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x590D;&#x7528;&#x5EA6;&#x6700;&#x9AD8;&#x7684;&#x4E00;&#x79CD;&#x8D44;&#x6E90;&#xFF0C;&#x5F80;&#x5F80;&#x4E00;&#x5957;&#x4EA7;&#x54C1;&#x53EA;&#x6709;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x98CE;&#x683C;&#xFF0C;&#x540C;&#x4E00;&#x79CD;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6309;&#x952E;&#xFF0C;&#x7BAD;&#x5934;&#xFF0C;&#x5355;&#x9009;&#x590D;&#x9009;&#x7B49;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x9875;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x8868;&#x3002;</p>
+<p>mBase&#x662F;&#x4E00;&#x5957;&#x57FA;&#x4E8E;<code>DPUX</code><em>dp&#x79FB;&#x52A8;&#x7AEF;UED&#x6837;&#x5F0F;&#x6807;&#x51C6;</em>&#x5F00;&#x53D1;&#x7684;&#x524D;&#x7AEF;UI&#x5C42;&#x89C6;&#x89C9;&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x96C6;&#x5408;&#x3002;</p>
+<h3 class="docs-heading">&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x5E93;-Stylesheet<span class="anchor-target" id="overview--stylesheet"></span>
+<a href="#overview--stylesheet" name="overview--stylesheet" class="anchor glyphicon glyphicon-link"></a></h3>
+<h5 class="docs-heading">&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x5E93;&#x63D0;&#x4F9B;&#x57FA;&#x7840;&#x7684;&#x6837;&#x5F0F;&#x652F;&#x6301;&#xFF0C;&#x6309;&#x79CD;&#x7C7B;&#x5206;&#x6210;&#x4E09;&#x5927;&#x7C7B;&#xFF1A;<span class="anchor-target" id="overview--"></span>
+<a href="#overview--" name="overview--" class="anchor glyphicon glyphicon-link"></a></h5>
+<p><code>Element</code><em>&#x5143;&#x7D20;</em>&#xFF1A;&#x6309;&#x952E;&#xFF0C;&#x5355;&#x9009;&#xFF0C;&#x591A;&#x9009;&#xFF0C;&#x661F;&#x7EA7;&#xFF0C;&#x7BAD;&#x5934;&#xFF0C;&#x8FB9;&#x6846;&#x7EBF;&#x7B49;&#x7B49;&#x3002;      </p>
+<p><code>Component</code><em>&#x7EC4;&#x4EF6;</em>&#xFF1A;&#x5217;&#x8868;&#xFF0C;&#x63D0;&#x793A;&#x6761;&#xFF0C;&#x4FE1;&#x606F;&#x6761;&#xFF0C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7B49;&#x7B49;&#x3002;   </p>
+<p><code>Template</code><em>&#x6A21;&#x677F;</em>&#xFF1A;&#x5BFC;&#x822A;&#xFF0C;&#x56E2;&#x5355;&#xFF0C;&#x5217;&#x8868;&#x9875;&#x7B49;&#x7B49;&#x3002;   </p>
+<h3 class="docs-heading">React Component<span class="anchor-target" id="overview-react-component"></span>
+<a href="#overview-react-component" name="overview-react-component" class="anchor glyphicon glyphicon-link"></a></h3>
+<h5 class="docs-heading">React Component &#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7A0B;&#x5EA6;&#x66F4;&#x9AD8;&#x7684;UI&#x5C42;&#x7EC4;&#x4EF6;&#x96C6;&#x5408;&#xFF0C;&#x4F18;&#x52BF;&#x5728;&#x4E8E;:<span class="anchor-target" id="overview-react-component-ui-"></span>
+<a href="#overview-react-component-ui-" name="overview-react-component-ui-" class="anchor glyphicon glyphicon-link"></a></h5>
+<ol>
+<li><p>&#x53D1;&#x6325;React&#x81EA;&#x8EAB;&#x4F18;&#x52BF;&#xFF0C;&#x5C06;dom&#x91CD;&#x7ED8;&#x7684;&#x6210;&#x672C;&#x964D;&#x5230;&#x6700;&#x4F4E;&#xFF0C;&#x63D0;&#x5347;Web&#x4F53;&#x9A8C;&#x3002;   </p>
+</li>
+<li><p>&#x7D27;&#x5BC6;&#x7ED3;&#x5408;MApi&#xFF0C;&#x505A;&#x5230;&#x5B8C;&#x7F8E;&#x7684;&#x6570;&#x636E;&#x5C42;&#x548C;&#x89C6;&#x56FE;&#x5C42;&#x5206;&#x79BB;&#x3002;   </p>
+</li>
+<li><p>&#x6781;&#x7B80;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x4FB5;&#x5165;&#x6027;&#x6781;&#x5C0F;&#xFF0C;&#x4EFB;&#x4F55;&#x67B6;&#x6784;&#x90FD;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5F15;&#x5165;&#x3002;</p>
+</li>
+<li><p>&#x5F3A;&#x5927;&#x7684;&#x751F;&#x6001;&#x94FE;&#x3002;</p>
+</li>
+</ol>
+<h3 class="docs-heading">CLI&#x5DE5;&#x5177;<span class="anchor-target" id="overview-cli-"></span>
+<a href="#overview-cli-" name="overview-cli-" class="anchor glyphicon glyphicon-link"></a></h3>
+<p><em>mBase CLI&#x662F;&#x4E00;&#x4E2A;&#x89E3;&#x51B3;&#x539F;&#x5B50;&#x5316;&#x4F9D;&#x8D56;&#x5F15;&#x5165;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x6700;&#x521D;&#x662F;&#x4E3A;&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x5E93;&#x800C;&#x8BBE;&#x8BA1;&#xFF0C;&#x73B0;&#x5DF2;&#x652F;&#x6301;&#x4EFB;&#x4F55;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x5757;&#x5E93;&#x3002;</em></p>
+<h5 class="docs-heading">mBase CLI &#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x89E3;&#x51B3;&#x4EE5;&#x4E0B;&#x95EE;&#x9898;&#xFF1A;<span class="anchor-target" id="overview-mbase-cli-"></span>
+<a href="#overview-mbase-cli-" name="overview-mbase-cli-" class="anchor glyphicon glyphicon-link"></a></h5>
+<ol>
+<li><p>&#x6309;&#x6A21;&#x5757;&#x7EC4;&#x5F15;&#x5165;&#x4F9D;&#x8D56;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5168;&#x90E8;&#x5F15;&#x5165;&#xFF0C;&#x505A;&#x5230;&#x6309;&#x9700;&#x5F15;&#x5165;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x89E3;&#x51B3;&#x6A21;&#x5757;&#x7EC4;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+</li>
+<li><p>&#x89E3;&#x51B3;&#x6A21;&#x5757;&#x7EC4;&#x7248;&#x672C;&#x4EA4;&#x53C9;&#x95EE;&#x9898;&#x3002;</p>
+</li>
+</ol>
+
+
+      <br>
+    </div>
+    
+
+  </div>
 
 
 

@@ -56,7 +56,7 @@
       <ul class="nav navbar-nav">
 	
         <li>
-          <a href="../index/">&#x4E3B;&#x9875;</a>
+          <a href="../">&#x4E3B;&#x9875;</a>
         </li>
           
 	
@@ -69,12 +69,17 @@
           <span>React Component</span>
         </li>
         
+	
+        <li>
+          <a href="../clitool/">CLI&#x5DE5;&#x5177;</a>
+        </li>
+        
         <li>
           <a href="http://events.dianping.com/dpux/page-1.html">DPUX&#x89C4;&#x8303;</a>
         </li>   
       </ul>
     </nav>
-    <a href="https://github.com/devWayne/mBase" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
   </div>
 </header>
 
@@ -98,7 +103,8 @@
             <div id="navigation">
   
 <ul class="nav sidenav"><li><a href="#overview">Overview</a><ul class="nav"><li><a href="#overview--introduce">&#x4ECB;&#x7ECD;-Introduce</a></li>
-<li><a href="#overview--usage">&#x4F7F;&#x7528;&#x65B9;&#x5F0F;-Usage</a></li></ul></li></ul></div>
+<li><a href="#overview--reactcomponent-import">&#x5F15;&#x5165;ReactComponent-Import</a></li>
+<li><a href="#overview--usage">&#x4F7F;&#x7528;-Usage</a></li></ul></li></ul></div>
           </div>
         </div>
         <div class="col-md-9" role="main">
@@ -126,15 +132,19 @@
 </blockquote>
 <h3 class="docs-heading">&#x4ECB;&#x7ECD;-Introduce<span class="anchor-target" id="overview--introduce"></span>
 <a href="#overview--introduce" name="overview--introduce" class="anchor glyphicon glyphicon-link"></a></h3>
-<p>  &#x76EE;&#x524D;&#x79FB;&#x52A8;&#x7AEF;Web&#x7684;&#x4F53;&#x9A8C;&#x4E0D;&#x5982;&#x539F;&#x751F;&#x7684;&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;DOM&#x7684;&#x6E32;&#x67D3;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#xFF0C;&#x5BB9;&#x6613;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x5361;&#x987F;&#xFF0C;&#x800C;React&#x662F;&#x4E00;&#x4E2A;&#x6E32;&#x67D3;&#x6027;&#x80FD;&#x6781;&#x4F73;&#x7684;UI&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x91CD;&#x7ED8;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x5DEE;&#x5F02;&#x6700;&#x5C0F;&#x7684;DOM&#x6539;&#x52A8;&#x65B9;&#x5F0F;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x63D0;&#x9AD8;&#x4E86;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;<br><code>React Component</code>&#x57FA;&#x4E8E;ES6 Class&#x7279;&#x6027;&#x5F00;&#x53D1;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;<code>React Component</code>&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;mapi&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;UI&#x5C42;&#x548C;&#x6570;&#x636E;&#x5C42;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x5E76;&#x4E3A;&#x5C06;&#x6765;&#x5F15;&#x5165;<code>React Native</code>&#x6216;&#x8005;&#x662F;&#x540C;&#x6784;&#x5E94;&#x7528;<code>Isomorphic JavaScript</code>&#x57CB;&#x4E0B;&#x94FA;&#x57AB;&#x3002;<br><em>&#x6CE8;1&#xFF1A;&#x5E76;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;ES6,&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x7684;Cortex&#x6CA1;&#x6709;&#x4E13;&#x95E8;&#x7684;<code>ES6 loader</code>,&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;(React tools&#x6216;&#x8005;babel),&#x4F1A;&#x4F7F;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5F15;&#x5165;&#x5927;&#x91CF;&#x7684;ES6&#x57AB;&#x7247;(shim),&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x7684;ES6&#x7279;&#x6027;</em><br><em>&#x6CE8;2&#xFF1A;&#x76EE;&#x524D;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x7535;&#x5F71;&#x9891;&#x9053;</em></p>
-<h3 class="docs-heading">&#x4F7F;&#x7528;&#x65B9;&#x5F0F;-Usage<span class="anchor-target" id="overview--usage"></span>
-<a href="#overview--usage" name="overview--usage" class="anchor glyphicon glyphicon-link"></a></h3>
-<h4 class="docs-heading">&#x4F7F;&#x7528;Cortex:<span class="anchor-target" id="overview--cortex-"></span>
+<p>  &#x76EE;&#x524D;&#x79FB;&#x52A8;&#x7AEF;Web&#x7684;&#x4F53;&#x9A8C;&#x4E0D;&#x5982;&#x539F;&#x751F;&#x7684;&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;DOM&#x7684;&#x6E32;&#x67D3;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#xFF0C;&#x5BB9;&#x6613;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x5361;&#x987F;&#xFF0C;&#x800C;React&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x80FD;&#x6781;&#x4F73;&#x7684;UI&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5C06;&#x771F;&#x5B9E;&#x7684;DOM&#x7ED3;&#x6784;&#x62BD;&#x8C61;&#x6210;<code>Virtual DOM</code>,&#x5E76;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x8FDB;&#x884C;&#x7EF4;&#x62A4;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x66F4;&#x65B0;&#xFF0C;&#x9875;&#x9762;&#x91CD;&#x7ED8;&#x8FDB;&#x884C;&#x91CD;&#x7ED8;&#x65F6;&#xFF0C;VD&#x7684;diff&#x7B97;&#x6CD5;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x5DEE;&#x5F02;&#x6700;&#x5C0F;&#x7684;DOM&#x6539;&#x52A8;&#x65B9;&#x5F0F;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x63D0;&#x9AD8;&#x4E86;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;   </p>
+<p>  React&#x672C;&#x8EAB;&#x53EA;&#x662F; View&#xFF0C;&#x53EF;&#x914D;&#x5408;&#x5176;&#x4ED6;&#x7C7B;&#x5E93;&#x4F7F;&#x7528;&#x3002;&#x5BF9;&#x4E8E;&#x73B0;&#x6709;&#x7684;&#x67B6;&#x6784;&#x4FB5;&#x5165;&#x6027;&#x6781;&#x5C0F;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x4F7F;&#x7528;&#x4F20;&#x7EDF;&#x7684;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x6216;&#x8005;&#x662F;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;&#x4F7F;&#x7528; <code>MVC</code>&#x3001;<code>MVVM</code>&#x6846;&#x67B6;&#x7684;&#x524D;&#x7AEF;&#x67B6;&#x6784;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x628A; React &#x5F53;&#x505A;&#x5176;&#x4E2D;&#x7684; V,&#x5373; View, &#x914D;&#x5408;&#x5176;&#x4ED6;&#x7C7B;&#x5E93;&#x4F7F;&#x7528;&#x3002;</p>
+<p><code>React Component</code>&#x57FA;&#x4E8E;ES6 Class&#x7279;&#x6027;&#x5F00;&#x53D1;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;<code>React Component</code>&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;mapi&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;UI&#x5C42;&#x548C;&#x6570;&#x636E;&#x5C42;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x5E76;&#x4E3A;&#x5C06;&#x6765;&#x5F15;&#x5165;<code>React Native</code>&#x6216;&#x8005;&#x662F;&#x540C;&#x6784;&#x5E94;&#x7528;<code>Isomorphic JavaScript</code>&#x57CB;&#x4E0B;&#x94FA;&#x57AB;&#x3002;   </p>
+<p><em>&#x6CE8;1&#xFF1A;&#x5E76;&#x4E0D;&#x662F;&#x5B8C;&#x6574;&#x7684;ES6,&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x7684;Cortex&#x6CA1;&#x6709;&#x4E13;&#x95E8;&#x7684;<code>ES6 loader</code>,&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;(React tools&#x6216;&#x8005;babel),&#x4F1A;&#x4F7F;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5F15;&#x5165;&#x5927;&#x91CF;&#x7684;ES6&#x57AB;&#x7247;(shim),&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x7684;ES6&#x7279;&#x6027;</em>   </p>
+<p><em>&#x6CE8;2&#xFF1A;&#x76EE;&#x524D;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x7535;&#x5F71;&#x9891;&#x9053;</em></p>
+<h3 class="docs-heading">&#x5F15;&#x5165;ReactComponent-Import<span class="anchor-target" id="overview--reactcomponent-import"></span>
+<a href="#overview--reactcomponent-import" name="overview--reactcomponent-import" class="anchor glyphicon glyphicon-link"></a></h3>
+<h4 class="docs-heading">&#x4F7F;&#x7528;Cortex&#x5F15;&#x5165;:<span class="anchor-target" id="overview--cortex-"></span>
 <a href="#overview--cortex-" name="overview--cortex-" class="anchor glyphicon glyphicon-link"></a></h4>
 <pre><code class="lang-shell">cortex install --save rc-hot-movie
 cortex install --save rc-hot-cinema
 </code></pre>
-<h4 class="docs-heading">&#x4F7F;&#x7528;mBase-Cli:<span class="anchor-target" id="overview--mbase-cli-"></span>
+<h4 class="docs-heading">&#x4F7F;&#x7528;mBase-Cli&#x5F15;&#x5165;:<span class="anchor-target" id="overview--mbase-cli-"></span>
 <a href="#overview--mbase-cli-" name="overview--mbase-cli-" class="anchor glyphicon glyphicon-link"></a></h4>
 <p>1.&#x5168;&#x5C40;&#x5B89;&#x88C5;<code>mBase-Cli</code></p>
 <pre><code class="lang-shell">npm i -g mb-cli
@@ -147,7 +157,23 @@ cortex install --save rc-hot-cinema
   ]
 </code></pre>
 <p>3.&#x8FD0;&#x884C;<code>mBase-Cli</code>,&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;&#x5C06;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x4E0A;&#x751F;&#x6210;<code>src/react-component</code>&#x6587;&#x4EF6;&#x5939;.</p>
+<h3 class="docs-heading">&#x4F7F;&#x7528;-Usage<span class="anchor-target" id="overview--usage"></span>
+<a href="#overview--usage" name="overview--usage" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>1.&#x5F15;&#x5165;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//using cortex</span>
+<span class="hljs-keyword">var</span> hot-movie = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;hot-movie&apos;</span>);
 
+<span class="hljs-comment">//using mbase-cli</span>
+<span class="hljs-keyword">var</span> hot-movie = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../src/react-component/hot-movie.js&apos;</span>);
+</code></pre>
+<p>2.&#x586B;&#x5165;mapi&#x53C2;&#x6570;:</p>
+<pre><code class="lang-javascipt">//HotMovie &#x662F;&#x4E00;&#x4E2A; React Component
+&lt;HotMovie url=&quot;http://app.movie.dianping.com/xxx.bin&quot;/&gt;
+</code></pre>
+<p>3.Render:</p>
+<pre><code> //React render&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x8282;&#x70B9;
+ React.render(&lt;HotMovie url=&quot;http://app.movie.dianping.com/xxx.bin&quot;/&gt;, document.getElementById(&apos;hot-movie&apos;));
+</code></pre>
 
       <br>
     </div>

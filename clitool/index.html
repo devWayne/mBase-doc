@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<title>
+	mBase Doc
+</title>
+
+<!-- Main styles -->
+<link href="../public/css/index.css" rel="stylesheet">
+
+<!-- Webfonts -->
+<script type="text/javascript">
+  WebFontConfig = {google: {families: ['PT+Sans:400,700,400italic,700italic', 'PT+Mono&subset=latin,cyrillic'] }};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="../public/ico/favicon.ico">
+
+  </head>
+  <body class="clitool">
+    
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../#" class="navbar-brand" alt="Less">
+        <img src="../public/img/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+        <li>
+          <a href="../">&#x4E3B;&#x9875;</a>
+        </li>
+          
+	
+        <li>
+          <a href="../stylesheet/">&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#x5E93;</a>
+        </li>
+        
+	
+        <li>
+          <a href="../reactcomponent/">React Component</a>
+        </li>
+        
+	
+        <li class="active">
+          <span>CLI&#x5DE5;&#x5177;</span>
+        </li>
+        
+        <li>
+          <a href="http://events.dianping.com/dpux/page-1.html">DPUX&#x89C4;&#x8303;</a>
+        </li>   
+      </ul>
+    </nav>
+    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
+  </div>
+</header>
+
+
+    
+<div class="docs-header" id="content">
+  <div class="container">
+    <h1>mBase Cli</h1>
+    <p>&#x4F9D;&#x8D56;&#x52A0;&#x8F7D;&#x5DE5;&#x5177;</p>
+  </div>
+</div>
+
+
+
+
+    
+    <div class="container docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar hidden-print" role="complementary">
+            <div id="navigation">
+  
+<ul class="nav sidenav"><li><a href="#overview">Overview</a><ul class="nav"><li><a href="#overview--introduce">&#x4ECB;&#x7ECD;-Introduce</a></li>
+<li><a href="#overview--usage">&#x5FEB;&#x901F;&#x4F7F;&#x7528;-Usage</a></li></ul></li>
+<li><a href="#api">API&#x63A5;&#x53E3;</a><ul class="nav"><li><a href="#api-update">update</a></li>
+<li><a href="#api-override">override</a></li>
+<li><a href="#api-package">package</a></li></ul></li>
+<li><a href="#qa">&#x5E38;&#x89C1;&#x95EE;&#x9898;Q&amp;A</a><ul class="nav"><li><a href="#qa--version-">&#x5982;&#x4F55;&#x786E;&#x8BA4;&#x6A21;&#x5757;&#x7EC4;&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;(Version)?</a></li>
+<li><a href="#qa--package-">&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x5C06;&#x6A21;&#x5757;&#x5212;&#x5206;&#x4E3A;Package?</a></li>
+<li><a href="#qa--require-">&#x5982;&#x4F55;&#x5904;&#x7406;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;(require)?</a></li></ul></li></ul></div>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          
+<div class="panel docs-content">
+  
+
+
+  <!-- Overview -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">Overview<span class="anchor-target" id="overview"></span>
+<a href="#overview" name="overview" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
+
+    
+    <div class="section-content">
+
+      <!-- overview -->
+       
+
+
+<h3 class="docs-heading">&#x4ECB;&#x7ECD;-Introduce<span class="anchor-target" id="overview--introduce"></span>
+<a href="#overview--introduce" name="overview--introduce" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x5728;&#x4E1A;&#x52A1;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x590D;&#x7528;&#x5EA6;&#x6700;&#x9AD8;&#x7684;&#x4E00;&#x79CD;&#x8D44;&#x6E90;&#xFF0C;&#x5F80;&#x5F80;&#x4E00;&#x5957;&#x4EA7;&#x54C1;&#x53EA;&#x6709;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x98CE;&#x683C;&#xFF0C;&#x540C;&#x4E00;&#x79CD;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6309;&#x952E;&#xFF0C;&#x7BAD;&#x5934;&#xFF0C;&#x5355;&#x9009;&#x590D;&#x9009;&#x7B49;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x9875;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x8868;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x5C06;&#x6240;&#x6709;&#x5F97;&#x5143;&#x7D20;&#xFF0C;&#x7EC4;&#x4EF6;&#x5168;&#x90E8;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x6253;&#x5305;&#x6210;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF08;&#x7C7B;&#x4F3C;bootstrap)&#x7684;&#x9020;&#x6210;&#x5927;&#x91CF;&#x7684;&#x8D44;&#x6E90;&#x6D6A;&#x8D39;&#x3002;</p>
+<p>mBase-Cli &#x6700;&#x521D;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x5F15;&#x5165;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C06;&#x539F;&#x5148;&#x7684;&#x5B8C;&#x6574;&#x5F15;&#x5165;&#x4F9D;&#x8D56;&#x5206;&#x89E3;&#x4E3A;&#x6309;&#x6A21;&#x5757;&#x7EC4;&#x5F15;&#x5165;&#x3002;</p>
+<p>&#x5B8C;&#x6574;&#x5F15;&#x5165;: </p>
+<pre><code class="lang-javascript">   <span class="hljs-string">&quot;dependencies&quot;</span>:{
+    <span class="hljs-string">&quot;mBase.css&quot;</span>:<span class="hljs-string">&quot;*&quot;</span>
+   }
+</code></pre>
+<p><em>&#x5B8C;&#x6574;&#x5F15;&#x5165;&#x6837;&#x5F0F;&#x98CE;&#x683C;&#x6587;&#x4EF6;&#x5728;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5F53;&#x6587;&#x4EF6;&#x8F83;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x52A0;&#x8F7D;&#x4F1A;&#x5E26;&#x6765;&#x989D;&#x5916;&#x7684;&#x538B;&#x529B;&#x3002;</em></p>
+<p>&#x6309;&#x6A21;&#x5757;&#x7EC4;&#x5F15;&#x5165;:</p>
+<pre><code class="lang-javascript">  <span class="hljs-string">&quot;mBase&quot;</span>: [
+    <span class="hljs-string">&quot;components/banner.less&quot;</span>,
+    <span class="hljs-string">&quot;elements/arrow.less&quot;</span>,
+    <span class="hljs-string">&quot;elements/button.less&quot;</span>
+  ]
+</code></pre>
+<p><em>&#x6309;&#x9700;&#x52A0;&#x8F7D;&#xFF0C;&#x6709;&#x6548;&#x51CF;&#x5C11;&#x5BA2;&#x6237;&#x7AEF;&#x52A0;&#x8F7D;&#x8D44;&#x6E90;&#x3002;</em></p>
+<h3 class="docs-heading">&#x5FEB;&#x901F;&#x4F7F;&#x7528;-Usage<span class="anchor-target" id="overview--usage"></span>
+<a href="#overview--usage" name="overview--usage" class="anchor glyphicon glyphicon-link"></a></h3>
+<h4 class="docs-heading">Step1:&#x5168;&#x5C40;&#x5B89;&#x88C5;mBase-cli&#x5DE5;&#x5177;<span class="anchor-target" id="overview-step1-mbase-cli-"></span>
+<a href="#overview-step1-mbase-cli-" name="overview-step1-mbase-cli-" class="anchor glyphicon glyphicon-link"></a></h4>
+<pre><code class="lang-shell">$ npm i -g mb-cli
+</code></pre>
+<h4 class="docs-heading">Step2:&#x914D;&#x7F6E;&#x6A21;&#x5757;<span class="anchor-target" id="overview-step2-"></span>
+<a href="#overview-step2-" name="overview-step2-" class="anchor glyphicon glyphicon-link"></a></h4>
+<p>&#x5728;<code>package.json</code>&#x6216;<code>cortex.json</code>&#x4E2D;&#x914D;&#x7F6E;&#x8981;&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;</p>
+<pre><code class="lang-javascript">  <span class="hljs-comment">//example</span>
+  <span class="hljs-string">&quot;mBase&quot;</span>: [
+    <span class="hljs-string">&quot;components/banner.less&quot;</span>,
+    <span class="hljs-string">&quot;elements/arrow.less&quot;</span>,
+    <span class="hljs-string">&quot;elements/button.less&quot;</span>
+  ]
+</code></pre>
+<h4 class="docs-heading">Step3:&#x6267;&#x884C;&#x6307;&#x4EE4;<span class="anchor-target" id="overview-step3-"></span>
+<a href="#overview-step3-" name="overview-step3-" class="anchor glyphicon glyphicon-link"></a></h4>
+<pre><code>$ mBase-Cli
+</code></pre>
+
+      <br>
+    </div>
+    
+
+  </div>
+
+  <!-- API接口 -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">API&#x63A5;&#x53E3;<span class="anchor-target" id="api"></span>
+<a href="#api" name="api" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
+
+    
+    <div class="section-content">
+
+      <!-- api -->
+       
+
+
+<h3 class="docs-heading">update<span class="anchor-target" id="api-update"></span>
+<a href="#api-update" name="api-update" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">override<span class="anchor-target" id="api-override"></span>
+<a href="#api-override" name="api-override" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">package<span class="anchor-target" id="api-package"></span>
+<a href="#api-package" name="api-package" class="anchor glyphicon glyphicon-link"></a></h3>
+
+
+      <br>
+    </div>
+    
+
+  </div>
+
+  <!-- 常见问题Q&amp;A -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">&#x5E38;&#x89C1;&#x95EE;&#x9898;Q&amp;A<span class="anchor-target" id="qa"></span>
+<a href="#qa" name="qa" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
+
+    
+    <div class="section-content">
+
+      <!-- qa -->
+       
+
+
+<h3 class="docs-heading">&#x5982;&#x4F55;&#x786E;&#x8BA4;&#x6A21;&#x5757;&#x7EC4;&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;(Version)?<span class="anchor-target" id="qa--version-"></span>
+<a href="#qa--version-" name="qa--version-" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x5728;&#x901A;&#x8FC7;mBase CLI&#x5F15;&#x5165;&#x6A21;&#x5757;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#xFF0C;mBase CLI&#x4F1A;&#x5728;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x6A21;&#x5757;&#x5934;&#x81EA;&#x52A8;&#x6CE8;&#x5165;&#x7248;&#x672C;&#x53F7;&#x7684;&#x6CE8;&#x91CA;&#x3002;   </p>
+<p>&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+    Version: xxx
+    Import Date: xxx
+    Package: xxx
+**/</span>
+</code></pre>
+<h3 class="docs-heading">&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x5C06;&#x6A21;&#x5757;&#x5212;&#x5206;&#x4E3A;Package?<span class="anchor-target" id="qa--package-"></span>
+<a href="#qa--package-" name="qa--package-" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x5355;&#x4E00;package&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x6BD4;&#x8F83;&#x9AD8;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x6D89;&#x53CA;&#x6709;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x4F1A;&#x9020;&#x6210;package&#x4E0D;&#x540C;&#x6B65;&#x7684;&#x95EE;&#x9898;&#x3002;   </p>
+<h3 class="docs-heading">&#x5982;&#x4F55;&#x5904;&#x7406;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;(require)?<span class="anchor-target" id="qa--require-"></span>
+<a href="#qa--require-" name="qa--require-" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x5F80;&#x5F80;&#x4F1A;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF1A;&#x4F8B;&#x5982;<code>elements/button.less</code>&#x4F9D;&#x8D56;<code>bass.less</code>&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x9759;&#x6001;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x9759;&#x6001;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x7EA6;&#x5B9A;&#x3002;</p>
+
+
+      <br>
+    </div>
+    
+
+  </div>
+
+
+
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>mBase docs are maintained by <a href="https://github.com/devWayne">devWayne</a>.</p>
+    <p>Documentation source code released under the MIT License.</p>
+  </div>
+</footer>
+
+
+    
+    <!-- Core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.min.js"></script>
+<script src="../public/js/application.js"></script>
+
+
+
+
+  </body>
+</html>
