@@ -24,7 +24,7 @@ mBase-Cli 最初是为了解决样式文件引入的问题，将原先的完整�
 按模块组引入:
 
 ```javascript
-  "mBase": [
+  "mBase.css": [
     "components/banner.less",
     "elements/arrow.less",
     "elements/button.less"
@@ -52,10 +52,10 @@ $ npm i -g mb-cli
 
 ```javascript
   //example
-  "mBase": [
-    "react-compoent/menu",
-    "react-compoent/hot-cinema",
-    "react-compoent/hot-movie"
+  "mBase.react": [
+    "menu",
+    "hot-cinema",
+    "hot-movie"
   ]
 
 ```

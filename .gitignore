@@ -17,3 +17,7 @@ TODO.md
 .DS_Store
 *.swo
 *.swp
+
+assets/public/js/jquery
+assets/public/js/bootstrap
+assets/public/js/holderjs

@@ -68,7 +68,7 @@ npm i -g mb-cli
 
 ```javascript
   //example
-  "mBase": [
+  "mBase.css": [
     "components/banner.less",
     "elements/arrow.less",
     "elements/button.less"
