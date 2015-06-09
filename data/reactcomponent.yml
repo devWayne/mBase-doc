@@ -12,5 +12,8 @@ published:
   usage:
     title: Usage
     files: <%= reactcomponent.base %>/usage.md
+  bestpractice:
+    title: Best Practice
+    files: <%= reactcomponent.base %>/bestpractice.md
 
 

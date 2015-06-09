@@ -2,6 +2,7 @@
 title: Overview
 ---
 
+
 > mBase.react是一套基于React.js开发的UI层组件库，每一个React Component对应一个mapi接口，利用React.js Virtual DOM的特性，实现最快的DOM渲染（render),提升页面的性能。
 
 ### 介绍-Introduce
@@ -96,4 +97,5 @@ var urlList=["dianping://url1","dianping://url2","dianping://url3","dianping://u
 
 输出：   
 ![hot-movie](../public/img/reactcomponent/hot-movie-sub.jpg)
+
 
