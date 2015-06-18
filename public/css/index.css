@@ -6552,6 +6552,18 @@ hr {
   background-color: #0e1115;
   border-color: #0e1115;
 }
+.docs-nav .github-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 9999;
+}
+@media (max-width: 600px) {
+  .docs-nav .github-icon {
+    display: none;
+  }
+}
 .btn-outline {
   color: #222a34;
   background-color: #fff;

@@ -6,14 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
-<title>
-	mBase Doc
-</title>
+<title>mBase Doc</title>
 
 <!-- Main styles -->
 <link href="../public/css/index.css" rel="stylesheet">
 
 <!-- Webfonts -->
+<!-- 
 <script type="text/javascript">
   WebFontConfig = {google: {families: ['PT+Sans:400,700,400italic,700italic', 'PT+Mono&subset=latin,cyrillic'] }};
   (function() {
@@ -26,6 +25,7 @@
     s.parentNode.insertBefore(wf, s);
   })();
 </script>
+-->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -79,7 +79,7 @@
         </li>   
       </ul>
     </nav>
-    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img class="github-icon" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
   </div>
 </header>
 
@@ -105,7 +105,17 @@
 <ul class="nav sidenav"><li><a href="#overview">Overview</a><ul class="nav"><li><a href="#overview--introduce">&#x4ECB;&#x7ECD;-Introduce</a></li>
 <li><a href="#overview-react-component-">React Component&#x5B9E;&#x4F8B;</a></li></ul></li>
 <li><a href="#usage">Usage</a><ul class="nav"><li><a href="#usage--reactcomponent-">&#x5F15;&#x5165;ReactComponent&#x6A21;&#x5757;</a></li>
-<li><a href="#usage--render">&#x8C03;&#x7528;&#x65B9;&#x5F0F;-render</a></li></ul></li></ul></div>
+<li><a href="#usage--render">&#x8C03;&#x7528;&#x65B9;&#x5F0F;-render</a></li></ul></li>
+<li><a href="#bestpractice">Best Practice</a><ul class="nav"><li><a href="#bestpractice--">&#x6A21;&#x5757;&#x8BBE;&#x8BA1;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</a></li>
+<li><a href="#bestpractice--movietab-rc-https-github-com-devwayne-movietab-rc-">&#x6A21;&#x5757;&#x5B9E;&#x4F8B;MovieTab.rc</a></li>
+<li><a href="#bestpractice--construction">&#x6A21;&#x5757;&#x76EE;&#x5F55;&#x7ED3;&#x6784;-construction</a></li>
+<li><a href="#bestpractice--usage">&#x8C03;&#x7528;&#x65B9;&#x5F0F;-usage</a></li>
+<li><a href="#bestpractice-api">API</a></li>
+<li><a href="#bestpractice-wrapper">Wrapper</a></li>
+<li><a href="#bestpractice-movietab">MovieTab</a></li>
+<li><a href="#bestpractice-maintab">MainTab</a></li>
+<li><a href="#bestpractice-subtab">SubTab</a></li>
+<li><a href="#bestpractice--test">&#x6D4B;&#x8BD5;-test</a></li></ul></li></ul></div>
           </div>
         </div>
         <div class="col-md-9" role="main">
@@ -263,6 +273,206 @@ cortex install --save rc-hot-cinema
 
   </div>
 
+  <!-- Best Practice -->
+  <div class="docs-section">
+    <div class="page-header">
+      <h1 class="docs-heading">Best Practice<span class="anchor-target" id="bestpractice"></span>
+<a href="#bestpractice" name="bestpractice" class="anchor glyphicon glyphicon-link"></a></h1>
+    </div>
+
+    
+    <div class="section-content">
+
+      <!-- bestpractice -->
+       
+
+
+<h2 class="docs-heading">&#x6A21;&#x5757;&#x8BBE;&#x8BA1;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;<span class="anchor-target" id="bestpractice--"></span>
+<a href="#bestpractice--" name="bestpractice--" class="anchor glyphicon glyphicon-link"></a></h2>
+<p>&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;React Component&#x6A21;&#x5757;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;   </p>
+<ol>
+<li>&#x5165;&#x53E3;<code>index.js</code>&#xFF0C;&#x51B3;&#x5B9A;&#x4E86;&#x6A21;&#x5757;&#x5185;&#x90E8;&#x8C03;&#x7528;&#x7684;&#x5173;&#x7CFB;&#x548C;API&#x3002;</li>
+<li>&#x7F16;&#x8BD1;&#x524D;&#x548C;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#xFF08;&#x5B50;&#xFF09;&#x6A21;&#x5757;&#x6E90;&#x7801;&#x3002;</li>
+<li>&#x63CF;&#x8FF0;&#x6A21;&#x5757;&#x4FE1;&#x606F;&#x548C;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;:npm&#x4E2D;&#x7684;<code>package.json</code>&#x6216;cortex&#x4E2D;&#x7684;<code>cortex.json</code>&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x6587;&#x6863;<code>readme.md</code>&#xFF0C;&#x5E94;&#x5305;&#x542B;&#xFF1A;&#x6A21;&#x5757;&#x7684;&#x5065;&#x5EB7;&#x72B6;&#x51B5;&#xFF0C;&#x5B8C;&#x6574;&#x7684;API&#x548C;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li>&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x3002;   </li>
+</ol>
+<p><br>
+<em>React v0.13 &#x4E4B;&#x540E;&#x7684;&#x7248;&#x672C;&#x5F00;&#x59CB;&#xFF0C;<code>react-tool</code>&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x4E86;&#x539F;&#x751F;&#x7684;ES6 Class&#xFF0C;&#x6240;&#x4EE5;&#x63A8;&#x8350;&#x4F7F;&#x7528;<code>react-tool</code>&#x6765;&#x8FDB;&#x884C;&#x6A21;&#x5757;&#x7684;&#x7F16;&#x8BD1;&#x3002;</em><br>*&#x63A8;&#x8350;&#x4F7F;&#x7528;React addons&#x81EA;&#x5E26;&#x7684;<code>React.addons.TestUtils</code>&#x6765;&#x7F16;&#x5199;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x3002;   </p>
+<h3 class="docs-heading">&#x6A21;&#x5757;&#x5B9E;&#x4F8B;<a href="https://github.com/devWayne/MovieTab.rc">MovieTab.rc</a><span class="anchor-target" id="bestpractice--movietab-rc-https-github-com-devwayne-movietab-rc-"></span>
+<a href="#bestpractice--movietab-rc-https-github-com-devwayne-movietab-rc-" name="bestpractice--movietab-rc-https-github-com-devwayne-movietab-rc-" class="anchor glyphicon glyphicon-link"></a></h3>
+<h2 class="docs-heading">&#x6A21;&#x5757;&#x76EE;&#x5F55;&#x7ED3;&#x6784;-construction<span class="anchor-target" id="bestpractice--construction"></span>
+<a href="#bestpractice--construction" name="bestpractice--construction" class="anchor glyphicon glyphicon-link"></a></h2>
+<pre><code>&#x251C;&#x2500;&#x2500; LICENSE
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; package.json
+&#x251C;&#x2500;&#x2500; cortex.json
+&#x251C;&#x2500;&#x2500; index.js
+&#x251C;&#x2500;&#x2500; dist
+&#x2502;   &#x251C;&#x2500;&#x2500; maintab.js
+&#x2502;   &#x251C;&#x2500;&#x2500; movietab.js
+&#x2502;   &#x251C;&#x2500;&#x2500; subtab.js
+&#x2502;   &#x2514;&#x2500;&#x2500; wrapper.js
+&#x2514;&#x2500;&#x2500; src
+    &#x251C;&#x2500;&#x2500; maintab.js
+    &#x251C;&#x2500;&#x2500; movietab.js
+    &#x251C;&#x2500;&#x2500; subtab.js
+    &#x2514;&#x2500;&#x2500; wrapper.js
+</code></pre><h2 class="docs-heading">&#x8C03;&#x7528;&#x65B9;&#x5F0F;-usage<span class="anchor-target" id="bestpractice--usage"></span>
+<a href="#bestpractice--usage" name="bestpractice--usage" class="anchor glyphicon glyphicon-link"></a></h2>
+<pre><code>var React = require(&apos;React&apos;),
+    MovieTab = require(&apos;movietab.rc&apos;),
+    MainTab = require(&apos;movietab.rc&apos;).MainTab,
+    SubTab = require(&apos;movietab.rc&apos;).SubTab;
+
+/**
+ * Use As UI Template 
+ */
+var movieInfo1 = { },movieInfo2 = {}, movieInfo3 = {}, movieInfo4 ={};
+var movieList = [ movieInfo1,movieInfo2,movieInfo3,movieInfo4 ];
+
+//insert into body
+React.render( &lt;Menu data={urlList}, document.body/&gt;
+React.render( &lt;MainTab data=Obj, document.body/&gt;
+React.render( &lt;SubTab data=Obj, document.body/&gt;
+
+
+
+/**
+ * Use As Widget
+ */
+var MTWrapper = MovieTab.Wrapper;
+var mapi = &apos;http://app.movie.dianping.com/yourbiz.bin&apos;;
+//insert into body
+React.render(&lt;MTWrapper url=&quot;mapi&quot;/&gt;, document.body);
+</code></pre><h2 class="docs-heading">API<span class="anchor-target" id="bestpractice-api"></span>
+<a href="#bestpractice-api" name="bestpractice-api" class="anchor glyphicon glyphicon-link"></a></h2>
+<h3 class="docs-heading">Wrapper<span class="anchor-target" id="bestpractice-wrapper"></span>
+<a href="#bestpractice-wrapper" name="bestpractice-wrapper" class="anchor glyphicon glyphicon-link"></a></h3>
+<h6 id="props-">props:</h6>
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+          <th style="width: 100px;">name</th>
+          <th style="width: 50px;">type</th>
+          <th>default</th>
+          <th>description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>url</td>
+          <td>String</td>
+          <th></th>
+          <td>mapi url corresponding to current Tab</td>
+      </tr>
+    </tbody>
+</table>
+
+
+<h3 class="docs-heading">MovieTab<span class="anchor-target" id="bestpractice-movietab"></span>
+<a href="#bestpractice-movietab" name="bestpractice-movietab" class="anchor glyphicon glyphicon-link"></a></h3>
+<h6 id="props-">props:</h6>
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+          <th style="width: 100px;">name</th>
+          <th style="width: 50px;">type</th>
+          <th>default</th>
+          <th>description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>data</td>
+          <td>List</td>
+          <th></th>
+          <td>List of Objects for inner moivetab </td>
+      </tr>
+    </tbody>
+</table>
+
+<h3 class="docs-heading">MainTab<span class="anchor-target" id="bestpractice-maintab"></span>
+<a href="#bestpractice-maintab" name="bestpractice-maintab" class="anchor glyphicon glyphicon-link"></a></h3>
+<h6 id="props-">props:</h6>
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th style="width: 100px;">name</th>
+        <th style="width: 50px;">type</th>
+        <th>default</th>
+        <th>description</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>url</td>
+          <td>String</td>
+          <th></th>
+          <td>href</td>
+      </tr>
+      <tr>
+          <td>Flag</td>
+          <td>Int</td>
+          <th></th>
+          <td>Movie status</td>
+      </tr>
+      <tr>
+          <td>Movie</td>
+          <td>Object</td>
+          <th></th>
+          <td>Info Object contains Name(string),Grade(int) and LargeImage(string)</td>
+      </tr>
+    </tbody>
+</table>
+
+<h3 class="docs-heading">SubTab<span class="anchor-target" id="bestpractice-subtab"></span>
+<a href="#bestpractice-subtab" name="bestpractice-subtab" class="anchor glyphicon glyphicon-link"></a></h3>
+<h4 class="docs-heading">props:<span class="anchor-target" id="bestpractice-props-"></span>
+<a href="#bestpractice-props-" name="bestpractice-props-" class="anchor glyphicon glyphicon-link"></a></h4>
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th style="width: 100px;">name</th>
+        <th style="width: 50px;">type</th>
+        <th>default</th>
+        <th>description</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>url</td>
+          <td>String</td>
+          <th></th>
+          <td>href</td>
+      </tr>
+      <tr>
+          <td>Flag</td>
+          <td>Int</td>
+          <th></th>
+          <td>Movie status</td>
+      </tr>
+      <tr>
+          <td>Movie</td>
+          <td>Object</td>
+          <th></th>
+          <td>Info Object contains Name(string),Grade(int) and Image(string)</td>
+      </tr>
+    </tbody>
+</table>
+
+<h2 class="docs-heading">&#x6D4B;&#x8BD5;-test<span class="anchor-target" id="bestpractice--test"></span>
+<a href="#bestpractice--test" name="bestpractice--test" class="anchor glyphicon glyphicon-link"></a></h2>
+<p>&#x6A21;&#x5757;&#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x57FA;&#x4E8E;<a href="http://facebook.github.io/jest/">Jest</a>,FaceBook&#x5B98;&#x65B9;&#x7684;&#x524D;&#x7AEF;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x3002;    </p>
+<p>&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<a href="http://facebook.github.io/jest/docs/tutorial-react.html#content">&#x5B98;&#x65B9;React&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6559;&#x7A0B;</a></p>
+
+
+      <br>
+    </div>
+    
+
+  </div>
+
 
 
 </div>
@@ -283,11 +493,9 @@ cortex install --save rc-hot-cinema
     <!-- Core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.min.js"></script>
+<script src="../public/js/jquery/dist/jquery.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/holderjs/holder.js"></script>
 <script src="../public/js/application.js"></script>
 
 

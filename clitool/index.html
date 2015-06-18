@@ -6,14 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
-<title>
-	mBase Doc
-</title>
+<title>mBase Doc</title>
 
 <!-- Main styles -->
 <link href="../public/css/index.css" rel="stylesheet">
 
 <!-- Webfonts -->
+<!-- 
 <script type="text/javascript">
   WebFontConfig = {google: {families: ['PT+Sans:400,700,400italic,700italic', 'PT+Mono&subset=latin,cyrillic'] }};
   (function() {
@@ -26,6 +25,7 @@
     s.parentNode.insertBefore(wf, s);
   })();
 </script>
+-->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -79,7 +79,7 @@
         </li>   
       </ul>
     </nav>
-    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/devWayne/mBase-doc" target="_blank" class="github-ribbon"><img class="github-icon" src="../public/ico/github-icon.png" alt="Fork me on GitHub"></a>
   </div>
 </header>
 
@@ -144,7 +144,7 @@
 </code></pre>
 <p><em>&#x5B8C;&#x6574;&#x5F15;&#x5165;&#x6837;&#x5F0F;&#x98CE;&#x683C;&#x6587;&#x4EF6;&#x5728;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5F53;&#x6587;&#x4EF6;&#x8F83;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x52A0;&#x8F7D;&#x4F1A;&#x5E26;&#x6765;&#x989D;&#x5916;&#x7684;&#x538B;&#x529B;&#x3002;</em></p>
 <p>&#x6309;&#x6A21;&#x5757;&#x7EC4;&#x5F15;&#x5165;:</p>
-<pre><code class="lang-javascript">  <span class="hljs-string">&quot;mBase&quot;</span>: [
+<pre><code class="lang-javascript">  <span class="hljs-string">&quot;mBase.css&quot;</span>: [
     <span class="hljs-string">&quot;components/banner.less&quot;</span>,
     <span class="hljs-string">&quot;elements/arrow.less&quot;</span>,
     <span class="hljs-string">&quot;elements/button.less&quot;</span>
@@ -163,10 +163,10 @@
 <a href="#overview-step2-" name="overview-step2-" class="anchor glyphicon glyphicon-link"></a></h4>
 <p>&#x5728;<code>package.json</code>&#x6216;<code>cortex.json</code>&#x4E2D;&#x914D;&#x7F6E;&#x8981;&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;</p>
 <pre><code class="lang-javascript">  <span class="hljs-comment">//example</span>
-  <span class="hljs-string">&quot;mBase&quot;</span>: [
-    <span class="hljs-string">&quot;react-compoent/menu&quot;</span>,
-    <span class="hljs-string">&quot;react-compoent/hot-cinema&quot;</span>,
-    <span class="hljs-string">&quot;react-compoent/hot-movie&quot;</span>
+  <span class="hljs-string">&quot;mBase.react&quot;</span>: [
+    <span class="hljs-string">&quot;menu&quot;</span>,
+    <span class="hljs-string">&quot;hot-cinema&quot;</span>,
+    <span class="hljs-string">&quot;hot-movie&quot;</span>
   ]
 </code></pre>
 <p><br></p>
@@ -281,11 +281,9 @@
     <!-- Core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.min.js"></script>
+<script src="../public/js/jquery/dist/jquery.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/holderjs/holder.js"></script>
 <script src="../public/js/application.js"></script>
 
 
