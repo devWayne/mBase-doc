@@ -66,7 +66,7 @@ Awaiting:
 
 实例:
 
-[点击此处](http://kylar.cn/mBase.css/test/elements.html#button)
+[点击此处](http://kylar.cn/mBase.css/modules/elements.html#button)
 
 
 ### 星级-Stars
@@ -102,7 +102,7 @@ Awaiting:
 
 实例:
 
-[点击此处](http://kylar.cn/mBase.css/test/elements.html#star)
+[点击此处](http://kylar.cn/mBase.css/modules/elements.html#star)
 
 
 ### 选择-Selects
@@ -189,7 +189,7 @@ Awaiting:
 
 实例:
 
-[点击此处](http://kylar.cn/mBase.css/test/elements.html#select)
+[点击此处](http://kylar.cn/mBase.css/modules/elements.html#select)
 
 
 ### 箭头-Arrows
@@ -234,6 +234,6 @@ Awaiting:
 
 实例:
 
-[点击此处](http://kylar.cn/mBase.css/test/elements.html#arrow)
+[点击此处](http://kylar.cn/mBase.css/modules/elements.html#arrow)
 
 

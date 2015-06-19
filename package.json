@@ -20,6 +20,7 @@
     "cheerio": "^0.17.0",
     "cwd": "^0.3.7",
     "fs-utils": "^0.4.3",
+    "gh-pages": "^0.3.1",
     "git-branch": "^0.1.2",
     "git-repo-name": "^0.2.0",
     "git-username": "^0.2.0",
@@ -94,6 +95,7 @@
     "remote-origin-url": "^0.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "node gh-pages"
   }
 }
